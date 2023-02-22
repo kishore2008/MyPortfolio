@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">My Blogs</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Kishore Ramesh</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxIRExYTFBMYFhEQFhgWGBYaERYWEhMRFhgYGBkWFhYaHisiGhwoHxYYIzQjKCwuMTExGiE3PDcvOyswMS4BCwsLDw4PHBERHTIoHykwMTAwMDAwMDAwMDAzMDAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUCAwYBBwj/xABLEAACAQIDBAQJBwgIBwEAAAAAAQIDEQQSIQUxQVEGE2GRIjJScYGTobHRBxVTVMHh8BQjNEJicpLSJDNjZIKUo9R0oqSywtPiF//EABoBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAxEQACAQIDBQcEAQUAAAAAAAAAAQIDEQQhMRITQVGhUmFxgZHR8AUiMuGxFBUjssH/2gAMAwEAAhEDEQA/APswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqqVox3u3v7gDaCvq45vxVZc3vMI4qfle4vsMtssswaMNXz+dG8o1Yq8gAAAAAAAAAAAAAAAAAAAAAAAAAYt94BkDDM+XtR5nfL2oA2A15n5PtR51j8n2oAznJJXe5FTiMfKT0eWPZv9LJWPq3py0aatdPfZv3FSmbU4rVmtOPE29Y+b7z1M1pnqZqXsbUzK5qTMkytiCbs/wAZ+b7UWBFwFK0bvfL3DE4pR0WsvYjCWcsjJ5vI3VKqjvI08U3u095Gc29XvPUy6giyibutlzfeZRrSXE0IyTJshYlQxHM3kBM2Uqrj5ijiVcSYDGLvqRsVtCnTdpSs8uZKz1XxKJX0ISb0JYIeC2hCpZLSbV3HW69NiYS01qGmnZgAEEAAAAAAA5H5TsTOnhVkk49ZXhCVnZyg4ybi3ydkdccZ8q36LD/iaf8A2SN8Mr1o+KLR1RyOyOiuIxEOsgoKDdk5ytmtvaST0Jq6AYvnS/jl/IdH0VxSp4OnJq9rq3pZeQxLlBSjpm5wcufCL9p21cdUjNxT0N3KfDTQ4NfJ3i+dL1kv5DJfJ1i/Kpesl/Id7GvP8UKn8xnHET5/9PV/mMX9RrLl88yNqp8TMMDgpxoU4Td6kaUYS1vGTStvavv4kCtQlCza8GWqfBp+5l/Hd+Ea8Mrwj+7H3I5VUauzKM2igTM0y5lgab/UXo09xoxWGpxjJJqEmmlLSTi2tJKMtHbkX3iL7xHGbT6cYXD1uqqznTaTb6yhVgpRSfhU5OPhaq1uN9HdWfO4j5Vs8vzEIQinZdcpSnPk8kZJR7322OJ21s3F4jac8FWxLqVYTqKE6jlky5OsTUF4ilFR0S07bE7/APMNoLd1UvNOf2wRR14RdpOwUaks4rI7jYnyl4yvVVFUIYjN43VRlCpCHGTlKThbzuPnO5TPk2wvk32hGV5YlUI3Tbp1ajm7diyrnxPpuycPVpU1CrWdaUdFUcVGcocM6Wjkt11a5aFSnLKDChKOqsT0ZKRruepliTYmepmEWZtWIIM0z1M1pmSZBUk4adnbg/eV+ImoYlSqSTi4vLp4mqtf26kPH9IaVOnOcJKU4aKOqvLn2rjdcjLZvSjC1qdNVZwjVq/m3T1vnbypLik9LectuaiW1su2hfZlHNrLQnyrxnWh1clezzPepR0eXt3MtTTQw8YRUYrSKsufebjBsyk09AACCoAAAAAAKbpLsOGMp9VUlOMc8JqcHFThOOi8ZNW9D3suTGSurPiWjJxd1qDmtl4OnhouhnclTla83HNJNKV2kkuPBFgpQatdWXKVvcywlQvxT7XFN95z+1cfmbhHLkT1ajbM+/cbRbqP+TWKcnkWcKcOb9ZL4m+NOPN+tn/McupPmZqb5lnh0+Jfdy5/PU6jFVnGDlCzceD104lTT2vUskrKytu5acSLhsbKm770964Ncmarq7tuJjSS1EYJakyeOqS3zfo09xoqVVFOTeiV2+wwTFWCnFxe6SafmZa1lkXSS8DlMYlHaNWrTipyq4SDyqUVmqU6ji4uW5adXr8CVs3pLi51IwlhaclKSi5U8bCXVq9m5QlFOy7DTHYX5LiKc1O8ctWNstm80qc1d31tlfeXuJ2RRq1KFaSebDZnTSlaCclvcV4z10vuPFrO1R7xZ/O87JQSit27q77suPBnvSDH16NNOhSjUqSlbw6ip06cbN55ve0rJWWupL2NUqyo05VnTdWUbydNPqtdVlu27Wa14kPHYehi6cqNRKcJppq7Ulz1VnHS6v2lnTSSSW5Ky8yN8Da752+fLGFeLTzNqZkma0zJM9A5zYmZJmtMzTIsQbEzTjcQ6cHJRzNcPtM0zK5AWuZQ9HsBSqudScIyanZRavGOl75X57egjdNcFSwqoYynTgqkK0U4JZYT0lNXS4px3rn2GWMp4nC568XG0pXlHWSab0bVlxfPiR/m3H47qMQp07QqKUINuMYWkvDy2d75ebdjtiv8iqOS2dNe78fM1q5y2r5frQ7PYGPliKFOrOlKlKabcJeNGza5LR2utNzRYgHlu120rHGAAQAAAAAAAAACt2/i+rp2XjVPBXYuL/HM5hMsek9e9VR4Qiu96v2WKpM7qEbQ8TrpRtEkzhlt2/jv7DxM1pnqZoXNqZ6ma0zNL8cSCDYmZrt9+prU7btPf9xoxuPp0I56k1GPbvb5RW9vsRWxFiN0hm/zdv1XJ29CRs2btKEkoydpLdfS6I9CssWush4i0s9JJ9q9Jup7Gpp5p+Fbhuj6eZ4WKqRlVlfgelTUY01CWv7LWLubEzRTmtVucd6tZrlobUz08Ph1Sjk7t8Tz6km3mYYnHQpOKm2s7aTSva2up6tpUfLf8LKLb9f8/Tj5EG/TJtfYjCLPPxeNq0qjjG1vnedtHBwnTUpXu/nI6JbRo+W/4H8TZHG0nxn6v7znYskU8RJHI/qVfu9P2S8FT4X9V7F6sZT/AG/V/eZLGU/2/V/eU1PFc0SqVRPcwvqNZ8V6GUsLBcH6/osPyum+E9f7NfE34faUIK2Wf8CVvaV0WbYst/V15atehnKjT5dS1wu0I1G4pSVlfVL4k0rNjQ8eXOWX0RX3lmduGlKVNSnq792V8uhwVoxjNqIABuZgAAAAAAAAHG7blevU86XckiHmJm37qtNX0umlw1iiEqjvfc+xJe49OH4rwO+H4rwM4m2nTu7cuVn7SOpE6hC0V2694k7BmLi0rq2nFN3MLm2tpF9uhCxeJVKnOo90IuXnsr2KrMhEfa22Y0vBXhVH3R/e+BzWPoRxDzzk+stZSvdW4JLcl5rEWniHPwpO8pat8295up1bNLhLd5z0oUt2steZeNiRsmnXw7bhJSi96vKL9i0L+htGs/1Ip83OUrPsTS95U4aroTKVUwqYenKW04q/n7nVGbtYs6FOpJuSd5b2+LJ2ExObR+MvaVuDxWWSf4sezxCVVS4av0cTKUL5FKkVJZ+XsU+1a+fEVXwi1Bf4Uk/bclYermXbxKTD1s+af0k5S72TcPWyu58jiXt1JPvPVhC0FHkkWqZsiyPTmmro6HodCLnN6Z4xVvS3ma9nec8KW8mo8zCvPdwc2tCpT1txXDivQbIyL3phCOWEtM6la/Fwyttea+U56LK4ijup7N7mVGqqtPbtYsMNiuEu/wCJNzWV+RTRZMwtSU7U/LaV+NmykKjWXHgUnTWvDidNsyllpRXFq7871+0mHh6fRQgoRUVwyPCk9pt8wACxAAAAAAAAABzPSzD2nCfCUcr88fufsKM7XbGD62m4/rLWP7y+O70nFyVvOved+HntQtyOujK8bcjwtYapeZe4qifs+pdZeMfcaT0LyRtxD8F8rfj7DmumFfJhan7ThHvkr+y5f46p+r6X9iOT+UGrbDL9qrBeyT+wtQX3LxI0jc5nAYjh3EvES8G/Jp/Z9pQUqxZU8YpRae/2PU9UiMsi5wWKzLt4lhTrnL0K7i7p6lphtoxfjaP2GbRtCpzL2nXZo2tinCDlxyyXpasjVQrxe6S7yN0gqrq4wTWaU4rfwfH2HPUezFt8n/B0Q+5pGGFjlhFPfZd5IhI0GcGfDt3zPYSJ2HquPmLLCYmUWpwk1JcVo0Ke2YeXO3mrf7k30tsx8ufdV/3BZ012jncnLWJ7iMXUqvNOTk+3guxcDFMkw23Hyp91T/3mGMxymklJtb9c3ulORjUp6tv56sorrJRsuhhFlr0do5qy5QTl9i95TxZ0vRGj4M582or0av3ruIwsNqtFefoc+Lls0ZPy9ci/AB754AAAAAAAAAAAAAOd6R7K31YL99f+S+3vOgckuIzrmu8vCbg7otCTi7o+flpgNlVrxmo+C/2o7n2XLLH7KSvKlZX1cVa/al2dg2XtFJW5aSi9JJrS9uB0yrOUbxRtKs7XSKnGbLrLNOUPBV23mjou84b5TKlsPTXOqn3U5/E+obc2pDqpQT8OatbkuLZwfSLCKp1MmrxpVoykuxxlFP0ScDahVkltyWnLjZfEaQvUjnkcvsjoJjK0VNqFKMldKcnnae55Yp29NmbsZ0HxtHVKNVLyJ3l/DJJ91zs8HjJw0TuuT3fcWFLaae+Pczzf7zitq/225W/7r18jrlhEuZ8nmpQeWUXGS3xkmpLzp6mUJn1fFRoVllqwjNftQTt5nw9BS4zoThJ605ypvkpZo90tfaehR+tUpZVIuPVe/RmDoSRxMJmU5pOM3rkd7c+B2uG6JYGl4NSo51J7r1FD0xirfaU9fYrwmJpXtOhUmoqTs04y8Fxmt17N9j70uiONw+J2qWea45X52+J9xEdum9pakPZ1Z15KMYPV2utbejiX9Do3N+NJw3WvC6d79u/T2krZexqeHcnSlpJ3SbV4c0pb2t2/kXNPFKStLR+88LFUqFKrlS+zneV/9reXU7o4mrKGUs/Be3UpIdGn9J/yf/R7U2Hky/nL55KPiWte+vjdhc06ibtu5Xtr7dDXXyylTTnGK62KbclppLW1zanhcLN5LrJeDza1MpYrER1l0XsR8H0Zc5ZVU87yaJc3qWi6Fr6Z+rX8xfYNU4RtCSafHMnmfO5I62PlLvRjLD0b5R6v3OR/UK98pdF7HOrogvppfwL4lzszBKjTUE27Nu73tt3JPWx8pd6HWx8pd6EKNODvFZmNXE1aqtN3XgvYzABqYAAAHgPQAAAAAAAaK+GhPWUIytuzRTt3mHzdR+hp+rj8CUCbsspSWjKyrDCReWSoRkuDVNNehnn9C/u/+kfEumyofPOK/KP6vMuds3Vwy3tra1/Yc/gvyP8AKZZ/0a8st83+HNbW2/2XPQhg3KKe080n8zLpSaT2up+jP6D/AHf/AEhbA/3f/SPzpg1g/wApln/RvCy3zb9LZra23+y4wSwf5TLP+i+Fkvm36WvbW2/2XLf0L7T+eZOy+11P0bRw2Dm7QhQk1raMabfn0N3zTh/oKXqofA+NfIsqfzrU6q/VKjVy335M9O1+zz9h9yOSspUp7O0zN3Ttcg/NGH+gpeqh8D35nw30FL1MPgTQZbyfafqytyBHY+G+r0rrT+ph8D35mw31el6mHwJctNe8yG8n2n6k3ZB+ZML9Xo+ph8B8yYX6tR9RD4E8DeTWjZBXfMeFv+jUdf7Cnv7j35iwv1aj6in8Cc1c8u1v7xvJ82CD8xYT6tR9RT+A+YMH9Vof5en8Cap359zPdX2E72p2n6k5kD5gwf1Wh/l6fwC2Bg1qsLQuv7Cn8CxSPRvanafqyAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAwy23d3D7jMAGGbsfd8D3OjIAGF+S+wJc/uMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Kishore and I'm a <span class="typing-2"></span></div>
+                    <p>I'm a developer/software engineer and I have worked as Data Analyst in Fiverr as a Freelancer and then I joined Valuemomentum as a Software Engineer Trainee and worked in a project where I designed the entire frontend of an application with services to call the backend api's. 
+                       I have experience working with Angular,Sql,Java,Springboot.<br>
+
+                    <!-- My GitHub: <div class="text"><a href="https://github.com/kishore2008?tab=repositories">Click Here</a></div><br>
+                    My Blogs : <div class="text"><a href="https://kishoreramesh.hashnode.dev/ "> Click Here</a></div> -->
+                    </p>
+                    <!-- <a href="#">Download CV</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Blogs</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text"><a href="https://kishoreramesh.hashnode.dev/angular-11">Angular 11</div>
+                        <p>Documented my learning about angular 11 and created a project on the same.</p>
+                    </div>
+                </div>
+            </a>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text"><a href="https://kishoreramesh.hashnode.dev/spring-boot-3">Spring Boot 3</div>
+                        <p>Documented my learning about Spring Boot and created a project on the same.</p>
+                    </div>
+                </div>
+            </a>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text"><a href="https://kishoreramesh.hashnode.dev/rest-basics-and-key-concepts">Rest</div>
+                        <p>In this blog I jave written the basics that we need to understand about REST/REST API'S.</p>
+                    </div>
+                </div>
+            </a>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills and Experience</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My experiences.</div>
+                    <p> 
+                       <b>Data Analyst</b>(Dec-2021 to May-2022)<br> 
+                       - Worked as a Data Analyst In Fiverr(Freelancing platform).
+                       - worked with technologies/tools like Power Bi,tableau,Excel,Pandas and Linux.
+                       <br><br>
+
+                       <b>Software Engineer Trainee(at Valuemomentum) </b> (June-2022 to Feb-2023)<br> 
+                       - Worked as a Software Engineer Trainee in Valuemomentum.<br> 
+                       - Learnt java,springboot,Sql,angular,aws,microservices.<br> 
+                       - Have experience working in different layers of Spring MVC such as Spring Controller,service and repository classes.<br> 
+                       - developed web services using springboot for various end points which are are insert/delete/update/read operations.<br> 
+                       - Did entire front-end design for a project using angular within short period of time with authentication and services to integrate with .Net backend.<br> 
+                       - Used JIRA to handle software development issues.<br> 
+                       - Developed Data Layer using Hibernate FrameWork, Wrote POJO classes.<br> 
+                       - Responsible to create DAO Crud methods using Hibernate and Spring FrameWork<br> 
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="text"><b>My Skills.</b></div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Angular</span>
+                            <!-- <span>90%</span> -->
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Spring Boot</span>
+                            <!-- <span>60%</span> -->
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <!-- <span>80%</span> -->
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>AWS</span>
+                            <!-- <span>50%</span> -->
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <!-- <span>70%</span> -->
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="https://miro.medium.com/max/960/1*YHTKGdxQANLCVLDITTxqIg.jpeg" alt="">
+                        <div class="text"><a href="https://github.com/kishore2008/Angular11EventsApplication">Angular</a></div>
+                        <p>Built an Angular events application with basic authentication.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="https://www.oracle.com/a/tech/img/rc10-java-badge-3.png" alt="">
+                        <div class="text"><a href="https://github.com/kishore2008/BankManagementSystem">Java</a></div>
+                        <p>Code for Bank Management system using Java.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="data:image/png;base64,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" alt="">
+                        <div class="text"><a href="https://github.com/kishore2008/Todo">Java and Angular</a></div>
+                        <p>ToDo application using java,springboot and angular</p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="box">
+                        <img src="images/profile-4.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-5.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel free to contact me by <b>phone:8296240687</b> or by mail mentioned below:</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Kishore Ramesh</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Bangalore, India</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">kishore20081996@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By Kishore | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
